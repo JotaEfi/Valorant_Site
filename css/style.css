@@ -1,0 +1,33 @@
+path {
+  fill: white;
+}
+.nav_bar{
+  background: #000000;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+}
+.nav_bar div {
+  padding: 0 1rem;
+}
+.navbar_logo svg path{
+  fill: white;
+}
+.navbar_items ul a{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.navbar_items ul{
+  display: flex;
+  align-items: center;
+  
+}
+body {
+  
+}
