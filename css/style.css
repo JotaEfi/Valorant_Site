@@ -13,6 +13,13 @@ path {
 section{
   display: inline-block;
 }
+h1 {
+  transform: translateY(0);
+  transition: transform .65s cubic-bezier(.25,.46,.45,.94),-webkit-transform .65s cubic-bezier(.25,.46,.45,.94);
+  font-size: 10rem;
+  font-weight: 800;
+  letter-spacing: -5px;
+}
 .nav_bar{
   height: 80px;
   z-index: 10;
@@ -123,7 +130,7 @@ section{
 
 .start_content::before {
   content: "";
-  z-index: 1;
+  z-index: 10;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -551,24 +558,45 @@ transition-duration: .5s;
   align-self: center;
 }
 .section_map {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-color: #ece8e1;
+  z-index: 1;
+}
+.section_map_container {
   height: 800px;
-  padding: 20rem 0;
+  max-width: 1080px;
+  margin: 3rem auto;
+}
+.section_map_text {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 30px;
+  padding: 100px 0 0 20px;
+  z-index: 5;
+  position: relative;
 }
 .section_map_img {
   right: calc(50vw - 61.5rem);
   transform: translateX(22%);
   bottom: 0;
+  right: 0;
   height: 100%;
-  width: 1080px;
+  width: 1380px;
+  position: absolute;
+  z-index: 1;
 }
 .section_map_img img{
   height: 100%;
-    position: absolute;
-    width: 100%;
+  position: absolute;
+  width: 100%;
   display: block;
   width: 100%;
   display: block;
-    position: absolute;
+  position: absolute;
+    
 }
 .bottom_section {
   width: 100%;
