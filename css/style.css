@@ -15,7 +15,7 @@ section{
 }
 .nav_bar{
   height: 80px;
-  z-index: 2;
+  z-index: 10;
   top: 0;
   left: 0;
   background:#111;
@@ -123,25 +123,31 @@ section{
 
 .start_content::before {
   content: "";
-  z-index: 3;
+  z-index: 1;
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 6%;
+  display: block;
+  left: calc(50% - 61.5rem);
   transform: translateX(-50%);
-  width: 0.075vw;
+  border-left: 1px solid hsla(38,22%,90%,.5);
+  pointer-events: none;
   background-color: #989898; 
 }
 .start_content::after {
   content: "";
+  z-index: 1;
   position: fixed;
   top: 0;
   bottom: 0;
-  right: 6%;
+  display: block;
+  right: calc(50% - 61.5rem);
   transform: translateX(-50%);
-  width: 0.075vw;
+  border-right: 1px solid hsla(38,22%,90%,.5);
+  pointer-events: none;
   background-color: #ffffff; 
 }
+
 .start_background_video video, .start_background_video, .start_background_video video source {
   width: 100%;
   height: 100%;
@@ -155,9 +161,9 @@ section{
   align-items: center;
   display: flex;
   text-align: center;
-  top: 0%;
+  top: -5%;
   left: 50%;
-  transform: translate(-50%, -110%);
+  transform: translate(-50%, -100%);
   position: relative;
 }
 .start_text p, .start_text svg {
@@ -178,6 +184,7 @@ section{
   color: white;
   font-weight: bold;
 }
+
 .start_text button:hover {
   background-color: #0f1923;
   transition-duration: .3s;
@@ -192,7 +199,7 @@ section{
   padding: .7rem;
 }
 .start_button::before {
-  left: 0;
+  left: 0%;
   border: 1px solid hsla(38,22%,90%,.5);
   border-bottom: none;
   top: 0;
@@ -237,14 +244,14 @@ section{
   background-color: #ffffff;
   transition-duration: .4s;
 }
-.start_button:hover button{
+.start_button:hover button {
   background-color: #0f1923;
 transition-duration: .5s;
   cursor: pointer;
   
 }
 .section_notices{
-  padding: 80px 80px 180px 80px;
+  padding: 80px 15px 180px 15px;
   max-width: 125rem;
   background-color: #fff;
   width: 100%;
@@ -278,17 +285,20 @@ transition-duration: .5s;
 }
 .section_img_notices_top {
   gap: 20px;
-  width: 100%;
+  width: 96%;
   height: auto;
-
+ 
 }
 .section_img_notices_top div{
   display: flex;
   width: 30rem;
+  justify-self: top;
+
+  align-self: self-start;
 }
 .section_img_notices_top div img {
   margin: auto;
-  width: 30rem;
+  width: 35rem;
   height: auto;
 }
 .section_img_notices_top {
@@ -322,6 +332,7 @@ transition-duration: .5s;
   flex-direction: row;
   height: 65rem;
   overflow: visible;
+  z-index: 5;
 }
 
 .section_iso_img_div {
@@ -350,7 +361,7 @@ transition-duration: .5s;
   justify-content: end;
   width: 1080px;
   margin: 0 auto;
-  
+  padding-left: 80px;
 }
 .section_iso_text h1 span {
   font-size: 8rem;
@@ -371,12 +382,185 @@ transition-duration: .5s;
   font-weight: bold;
 }
 .section_infos {
-
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 1280px;
+  overflow: visible;
+  padding-top: 130px;
+  
 }
 .section_infos_container {
   display: flex;
-  width: 100%;
+  width: 1080px;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 150px 0 150px 0px;
+  gap: 80px;
+  position: 
+  absolute;
+  margin: 0 auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 5;
 }
-.section_infos_container video {
-  width: 500px;
+
+.section_infos_container h1 {
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+.section_infos_container div{
+  display: flex;
+  gap: 80px;
+  
+}
+.section_infos_container div div  {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 40px;
+  width: 300px;
+  
+}
+.section_infos_inner {
+  position: relative;
+  padding-left: 100px;
+  
+}
+.section_infos_inner div h4 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  
+}
+.section_infos_inner_video video{
+  width: 700px;
+  position: absolute;
+  object-fit: cover;
+}
+.section_infos_inner_video video source {
+  object-fit: cover;
+  right: 10px;
+
+}
+.overlay_video_infos {
+  color: #fff;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 2rem;
+  right: 30px;
+  width: 100%;
+  z-index: 1;
+  background-color: #ff4655;
+  padding: .4rem 2rem;
+}
+
+.comecar_a_jogar {
+  margin-top: 20px;
+}
+.comecar_a_jogar button{
+  cursor: pointer;
+  background-color: #EF4958;
+  border: none;
+  padding: 2rem 8rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+
+}
+.comecar_a_jogar {
+  display: inline-block;
+  position: relative;
+  padding: .7rem;
+  padding-left: .7rem;
+}
+.comecar_a_jogar::before {
+  left: 0%;
+  border: 1px solid hsla(0, 0%, 22%, 0.5);
+  border-bottom: none;
+  top: 0;
+  content: "";
+  display: block;
+  height: calc(50% - .4rem);
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.comecar_a_jogar::after {
+  left: 0;
+  border: 1px solid hsla(0, 0%, 27%, 0.5);
+  border-top: none;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: calc(50% - .4rem);
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+}
+
+.comecar_a_jogar button::after {
+  bottom: 0;
+  position: absolute;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  right: 3.5px;
+  bottom: 2.9px;
+  transform: translate(-100%, -100%);
+  background-color: #0f1923;
+  height: 4px;
+  width: 4px;
+}
+
+.comecar_a_jogar:hover button::after{
+  background-color: #ffffff;
+  transition-duration: .4s;
+}
+.comecar_a_jogar:hover button {
+  background-color: #0f1923;
+transition-duration: .5s;
+  cursor: pointer;
+  
+}
+.section_seus_agentes {
+  background-color: #ff4655;
+  height: 700px;
+  gap: 80px;
+  left: 50%;
+  width: 100%;
+  z-index: 2;
+}
+.seus_agentes_container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex;
+ 
+}
+.seus_agentes_container div img{
+  height: 800px;
+}
+.seus_agentes_container_textcontent {
+  align-self: center;
+}
+@media (max-width: 1100px) {
+  .section_img_notices_top div img {
+    width: 250px;
+  }
+  .section_img_notices_top div h3 {
+    font-size: 1.3rem;
+  }
+  .section_img_notices_top div {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1100px) {
+
 }
