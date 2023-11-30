@@ -21,9 +21,6 @@
   .section_infos_inner_text p {
     font-size: 1.2rem;
   }
-  .seus_agentes_container div img {
-    height: 700px;
-  }
   .section_infos {
     height: 1000px;
   }
@@ -51,9 +48,10 @@
     width: 300px;
   }
   .section_map_text {
-  padding: 100px 0 0 80px;
+    padding: 100px 0 0 80px;
+  }
 }
-@media (max-width: 995px) {
+@media screen and (max-width: 995px) {
   .section_img_notices_top div img {
     width: 250px;
   }
