@@ -123,7 +123,7 @@ h1 {
   text-transform: uppercase;
   padding: 8px;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 0.8vw;
 }
 .usuals_playbutton:hover {
   background: linear-gradient(
@@ -443,7 +443,8 @@ h1 {
   width: 400px;
 }
 .section_infos_inner {
-  padding: 0 50px;
+  width: 100%;
+  padding: 0 40px;
   margin: 0 auto;
   position: relative;
   justify-content: center;
@@ -651,7 +652,7 @@ h1 {
   position: relative;
   width: 100%;
   background-color: #ece8e1;
-  z-index: 1;
+  z-index: 0;
 }
 .section_map_container {
   height: 800px;
@@ -689,6 +690,7 @@ h1 {
 .bottom_section {
   width: 100%;
   background-color: #202020;
+  z-index: 10;
   /* background-color: #0f1923; */
 }
 .bottom_section_list {
@@ -706,6 +708,7 @@ h1 {
 .footer_section {
   background-color: #111;
   width: 100%;
+  z-index: 10;
 }
 .footer_section_container {
   max-width: 123rem;

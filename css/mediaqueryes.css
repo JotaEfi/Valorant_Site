@@ -8,6 +8,33 @@
   .section_img_notices_top div {
     width: 250px;
   }
+  .nav_bar {
+    padding: 0 20px;
+  }
+  .navbar_items ul {
+    gap: 0;
+    display: none;
+  }
+  .usuals_square {
+    pad: 0;
+  }
+  .navbar_items {
+    padding: 0;
+  }
+  .nav_bar_container {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .usuals_playbutton a {
+    padding: 1.2rem;
+    font-size: 10px;
+  }
+  .seus_agentes_container_textcontent {
+    margin-bottom: 0px;
+  }
+  .seus_agentes_container {
+    gap: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   .section_infos_inner_video video {
@@ -42,7 +69,7 @@
     height: 100%;
   }
   .seus_agentes_container {
-    margin: 5% 10%;
+    margin: 8% 80px;
   }
   .section_img_notices_top div img {
     width: 300px;
@@ -65,5 +92,40 @@
   }
   .section_infos_container div {
     gap: 40px;
+  }
+  .section_infos_inner {
+    flex-direction: column;
+  }
+  .section_infos_inner_text {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .section_infos_inner_video video,
+  .section_infos_inner_video .overlay_video_infos {
+    display: none;
+  }
+  .section_infos_container div div:not(.comecar_a_jogar) {
+    width: 100%;
+    padding: 0 80px;
+  }
+  .seus_agentes_container div img {
+    display: none;
+  }
+  .section_seus_agentes {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section_img_notices_top div img {
+    width: 20vw;
+  }
+  .section_img_notices_top div {
+    width: 20vw;
+    gap: 10px;
+  }
+
+  .seus_agentes_container_textcontent {
+    margin-bottom: 0px;
   }
 }
