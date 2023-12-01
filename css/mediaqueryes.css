@@ -129,3 +129,31 @@
     margin-bottom: 0px;
   }
 }
+@media screen and (max-width: 690px) {
+  .bottom_section_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .section_infos_container h1 {
+    font-size: 80px;
+    text-align: center;
+    padding-left: 0;
+  }
+  .section_img_notices_top div div h3 {
+    font-size: 5px;
+  }
+  .section_infos_inner {
+    padding: 0;
+  }
+  .section_infos_inner_text p {
+    height: 100%;
+  }
+  .start_text_texts svg {
+    width: 450px;
+  }
+  .start_text_texts p {
+    padding: 5%;
+  }
+}

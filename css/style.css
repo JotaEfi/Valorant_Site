@@ -18,7 +18,7 @@ a {
   color: black;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -763,26 +763,26 @@ h1 {
   text-align: center;
 }
 
-.bottom_section_list a{
+.bottom_section_list a {
   padding: 10px;
-  }
+}
 
-  .bottom_section_list a:hover{
-    background-color:#7e7e7e;
-    border-radius: 10px;
-    padding: 10px;
-    transition-duration: 1s;
+.bottom_section_list a:hover {
+  background-color: #7e7e7e;
+  border-radius: 10px;
+  padding: 10px;
+  transition-duration: 1s;
+}
+.section_img_notices_top div div h3 {
+  font-size: 12px;
+}
+.age_restriction {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
-    }
-
-    .age_restriction{
-      display: flex;
-      width: 100%; 
-      justify-content: center;
-      align-items: center;  
-         
-    }
-
-    .age_restriction img{
-      width: 250px;    
-    }
+.age_restriction img {
+  width: 250px;
+}
